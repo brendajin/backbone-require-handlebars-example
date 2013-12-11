@@ -1,9 +1,14 @@
 var paths = {
-	thumb: 'components/Thumb',
 	backbone: '../lib/backbone-optamd3-min',
-	handlebars: '../lib/handlebars.runtime-amd',
     jquery:'../lib/jquery-1.9.1.min',
-	underscore: '../lib/underscore-min'
+	underscore: '../lib/underscore-min',
+	handlebars: '../lib/handlebars.runtime',
+}
+
+var shim = {
+	handlebars: {
+		exports: 'Handlebars'
+	}
 }
 
 require.config({
@@ -14,7 +19,8 @@ require.config({
     //config is relative to the baseUrl, and
     //never includes a ".js" extension since
     //the paths config could be for a directory.
-    paths: paths
+    paths: paths,
+    shim: shim
 });
 
 require(["app"],function(App){

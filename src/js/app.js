@@ -1,7 +1,10 @@
-define(['jquery',
-    'underscore',
-    'backbone'
-],function($,_,Backbone){
+define([
+    'components/thumb'
+],function(thumb){    
+    
+    $(document).ready(function(){
+        var thumbGrid = new thumb.collection();
+    })
 
     return {
         initialize: function(){

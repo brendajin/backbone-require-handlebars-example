@@ -6,4 +6,13 @@
 	<script data-main="src/js/main" src="src/lib/require.js"></script>
 </head>
 <body>
+<script id="thumb-template" type="text/x-handlebars-template">
+    <div class="thumb">
+	    <img src="{{src}}"/>
+	    <h1>{{name}}</h1>
+	    <h2>{{description}}</h2>
+	    <h3>{{price}}</h3>
+	    {{#rating}}
+    </div>
+</script>
 </body>
