@@ -16,7 +16,7 @@ define([],function(){
 	{
 		name:"My sweet kitten",
 		description:"This kitten might give you the sniffles, but she's worth it",
-		src:"http://kitten.com/400/300",
+		src:"http://lorempixel.com/400/300/cats/",
 		rating:{
 			"starRating":"2.5",
 			"count": "14"
@@ -29,7 +29,7 @@ define([],function(){
 	{
 		name:"Pork",
 		description:"It's what's for breakfast",
-		src:"http://backonmockup.com/400/300",
+		src:"http://lorempixel.com/400/300/food/",
 		rating:{
 			"starRating":"5",
 			"count": "500"
