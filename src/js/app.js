@@ -1,9 +1,15 @@
 define([
-    'components/thumb'
-],function(thumb){    
+    'components/thumb',
+    'components/data'
+],function(thumb,data){    
     
     $(document).ready(function(){
-        var thumbGrid = new thumb.collection();
+        var thumbGrid = new thumb.collection(data);
+        var thumbView = new thumb.view({
+            el: 'body',
+            collection: thumbGrid
+        });
+        console.log(thumbView)
     })
 
     return {
