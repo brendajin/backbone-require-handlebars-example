@@ -3,7 +3,7 @@ define([],function(){
 	[{
 		name:"Cutest dog ever",
 		description:"This puppy is so cute, she makes toddlers throw fits",
-		src:"http://placedog.com/400/300",
+		src:"http://lorempixel.com/400/300/animals/",
 		rating:{
 			"starRating":"3.5",
 			"count": "5"
