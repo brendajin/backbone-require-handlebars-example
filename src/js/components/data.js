@@ -38,7 +38,6 @@ define([],function(){
 			"regular":"$10"
 		}
 	},
-	,
 	{
 		name:"Sports",
 		description:"It's what's after breakfast",
