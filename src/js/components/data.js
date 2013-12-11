@@ -1,5 +1,5 @@
 define([],function(){
-	var myData = 
+	var thumbs = 
 	[{
 		name:"Cutest dog ever",
 		description:"This puppy is so cute, she makes toddlers throw fits",
@@ -49,5 +49,5 @@ define([],function(){
 		}
 	}]
 
-	return myData;
+	return thumbs;
 })
