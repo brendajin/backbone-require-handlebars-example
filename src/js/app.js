@@ -1,7 +1,7 @@
 define([
     'components/thumb',
     'components/data'
-],function(thumb,data){    
+],function(thumb,data){   
     $(document).ready(function(){
         // instantiate a new collection, pass in the data
         var thumbGrid = new thumb.collection(data);

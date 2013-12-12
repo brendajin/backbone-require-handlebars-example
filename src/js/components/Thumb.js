@@ -1,11 +1,10 @@
-var viewPath = '../../templates/compiled/';
-
 define([
 	'jquery',
 	'underscore',
 	'backbone',
-	viewPath + 'thumb.handlebars',
-],function($,_,Backbone,templates){
+	'helpers',
+	'../../templates/compiled/thumb.handlebars',
+],function($,_,Backbone,helpers,templates){
 
 	// define a view that renders once it is initialized
 	var ThumbView = Backbone.View.extend({
@@ -32,6 +31,7 @@ define([
 	// later on, this collection may also be able to udpate itself, emit events, and listen for events from other collections
 	var ThumbCollection = Backbone.Collection.extend();
 
+	// return the exposed API of this module
 	return {
 		view: ThumbView,
 		collection: ThumbCollection

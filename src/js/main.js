@@ -3,6 +3,7 @@ var paths = {
     jquery:'../lib/jquery-1.9.1.min',
 	underscore: '../lib/underscore-min',
 	handlebars: '../lib/handlebars.runtime',
+	helpers: 'util/helpers'
 }
 
 var shim = {
