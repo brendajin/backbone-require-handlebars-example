@@ -7,8 +7,7 @@ define([
 	viewPath + 'thumb.handlebars',
 ],function($,_,Backbone,templates){
 
-	// Compile the handlebars template. This step can be done differently with grunt or other build tools.
-
+	// define a view that renders once it is initialized
 	var ThumbView = Backbone.View.extend({
 		initialize: function() {
 			var self = this;
@@ -20,12 +19,18 @@ define([
 			self.$el.append(templates.thumb(self.collection.toJSON()))
 			return self;
 		},
+		events: {
+			'click img':'onClick'
+		},
+		onClick: function(e){
+			alert('Surprise! You clicked on "'+$(e.target).attr('alt')+'"!');
+		}
 	})
 
-	var ThumbCollection = Backbone.Collection.extend({
-		initialize: function(){
-		}
-	});
+	// define a collection
+	// later on, this can have much more detailed functionality, like .fetch() and .parse()
+	// later on, this collection may also be able to udpate itself, emit events, and listen for events from other collections
+	var ThumbCollection = Backbone.Collection.extend();
 
 	return {
 		view: ThumbView,
