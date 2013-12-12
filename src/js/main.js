@@ -14,7 +14,7 @@ var shim = {
 
 // set up require.js 
 require.config({
-    baseUrl: '/src/js/',
+    baseUrl: './src/js/',
     paths: paths,
     shim: shim
 });
