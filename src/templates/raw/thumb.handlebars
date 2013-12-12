@@ -1,0 +1,14 @@
+{{#each this}}
+<div class="thumb">
+    <img src="{{src}}" alt="{{name}}">
+    <h1>{{name}}</h1>
+    <h2>{{description}}</h2>
+    {{#if price.sale}}
+    	<h3 class="sale"> Sale: {{price.sale}}</h3>
+	{{/if}}
+	{{#if price.regular}}
+		<h3 class="regular"> Regular: {{price.regular}}</h3>
+	{{/if}}
+    {{#rating rating}}{{/rating}}
+</div>
+{{/each}}
