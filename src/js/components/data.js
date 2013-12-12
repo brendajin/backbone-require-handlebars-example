@@ -1,3 +1,5 @@
+// just your regular old fake data
+
 define([],function(){
 	var thumbs = 
 	[{

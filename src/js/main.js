@@ -12,6 +12,7 @@ var shim = {
 	}
 }
 
+// set up require.js 
 require.config({
     baseUrl: '/src/js/',
     paths: paths,
@@ -19,5 +20,6 @@ require.config({
 });
 
 require(["app"],function(App){
+	// initialize our application
 	App.initialize();
 });
