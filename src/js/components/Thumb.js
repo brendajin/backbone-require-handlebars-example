@@ -14,7 +14,6 @@ define([
 		},
 		render: function() {
 			var self = this;
-			console.log(self.collection.toJSON())
 			self.$el.append(templates.thumb(self.collection.toJSON()))
 			return self;
 		},
