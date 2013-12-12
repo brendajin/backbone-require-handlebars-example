@@ -1,5 +1,6 @@
 backbone-require-handlebars-example
 ===================================
+Live demo: http://brendajin.github.io/backbone-require-handlebars-example/
 
 An example of a "thumbnail" view using Backbone.js, Require,js, Handlebars
 
