@@ -1,5 +1,5 @@
 define([
-    'components/thumb',
+    'components/Thumb',
     'components/data'
 ],function(thumb,data){
 
