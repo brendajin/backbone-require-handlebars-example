@@ -1,5 +1,5 @@
 var paths = {
-	backbone: '../lib/backbone-optamd3-min',
+	backbone: '../lib/backbone',
     jquery:'../lib/jquery-1.9.1.min',
 	underscore: '../lib/underscore-min',
 	handlebars: '../lib/handlebars.runtime',
@@ -9,6 +9,13 @@ var paths = {
 var shim = {
 	handlebars: {
 		exports: 'Handlebars'
+	},
+	Backbone: {
+		deps: ['underscore', 'jquery'],
+		exports: 'Backbone'
+	},
+	underscore: {
+		exports: '_'
 	}
 }
 
