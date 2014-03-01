@@ -4,14 +4,6 @@ module.exports = function(grunt) {
   grunt.initConfig({
     // Do grunt-related things in here
     pkg: grunt.file.readJSON('package.json'),
-    watch: {
-      files: ['src/js/templates/raw/*.handlebars'],
-      tasks: ['handlebars'],
-      options: {
-        spawn: false,
-        livereload:true
-      }
-    },
     // Handlebars compilation task
     handlebars: {
       compile: {
